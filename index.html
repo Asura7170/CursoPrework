@@ -36,5 +36,21 @@
     <h3>rm {archivo.extencion} = Borrar archivo</h3>
     <h3>rm -d {nombre carpeta} = Borrar carpeta vacia</h3>
     <h3>rm -rf {nombre carpeta} = Borrar carpeta</h3>
+    <h3>git --version = Muestra la version del programa</h3>
+    <p>{nombre del programa}</p>
+    <h2>Crear llave SSH en GitHub</h2>
+    <h3>ssh-keygen -t rsa -b 4096 -C "Correo@gmail.com" = Para crear la llave</h3>
+    <h3>eval "$(ssh-agent -s)" = Evaluar que si existe un agente corriendo</h3>
+    <h3>cd ~/.ssh = para ir a la carpeta OCULTA</h3>
+    <h3>cat id_rsa.pub = para ver el contenido de la llave y copiar en "SSH Keys" en "GitHub"</h3>
+    <h2>Subir Repositorio</h2>
+    <h4>echo "# NombreCarpeta" >> README.md<br>
+        git init (si sale error ejecutar comendado "git add .")<br>
+        git add README.md<br>
+        git commit -m "Comentario de Cambios"<br>
+        git branch -M main<br>
+        git remote add origin https://github.com/Asura7170/NombreCarpeta.git<br>
+        git push -u origin main<br>
+    </h4>
 </body>
 </html>
